@@ -1,0 +1,11 @@
+clickhouse_dedb:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: dedb
+      host: localhost
+      port: 8123
+      user: de
+      password: de
+      secure: False

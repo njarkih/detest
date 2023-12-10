@@ -1,0 +1,1349 @@
+[0m21:58:48.714578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb42db93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb40c0e310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb40c0eb80>]}
+
+
+============================== 21:58:48.720441 | 7f5980e3-ee3b-462a-9e5f-f8ee7c5228ac ==============================
+[0m21:58:48.720441 [info ] [MainThread]: Running with dbt=1.7.3
+[0m21:58:48.721807 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nina/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:58:48.727261 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'clickhouse_dedb'
+[0m21:58:48.729127 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.03419025, "process_user_time": 3.937817, "process_kernel_time": 0.10794, "process_mem_max_rss": "91220", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m21:58:48.730559 [debug] [MainThread]: Command `dbt run` failed at 21:58:48.730175 after 0.04 seconds
+[0m21:58:48.731597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb42db93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb40c0e7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb40bae6d0>]}
+[0m21:58:48.732670 [debug] [MainThread]: Flushing usage events
+[0m21:58:57.770955 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m21:59:11.224553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75912d5ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f758f13fd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f758f14f8b0>]}
+
+
+============================== 21:59:11.230338 | 71ea3530-f754-4f03-a509-5cd2b2c2653b ==============================
+[0m21:59:11.230338 [info ] [MainThread]: Running with dbt=1.7.3
+[0m21:59:11.231764 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/nina/.dbt', 'log_path': '/home/nina/DE_test/de_test/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:59:11.233018 [info ] [MainThread]: dbt version: 1.7.3
+[0m21:59:11.234082 [info ] [MainThread]: python version: 3.8.10
+[0m21:59:11.235117 [info ] [MainThread]: python path: /home/nina/DE_test/.venv/bin/python
+[0m21:59:11.236131 [info ] [MainThread]: os info: Linux-5.15.0-91-generic-x86_64-with-glibc2.29
+[0m21:59:11.237156 [info ] [MainThread]: Using profiles dir at /home/nina/.dbt
+[0m21:59:11.238159 [info ] [MainThread]: Using profiles.yml file at /home/nina/.dbt/profiles.yml
+[0m21:59:11.239159 [info ] [MainThread]: Using dbt_project.yml file at /home/nina/DE_test/de_test/dbt_project.yml
+[0m21:59:11.433010 [info ] [MainThread]: Configuration:
+[0m21:59:11.434161 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m21:59:11.435316 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:59:11.436442 [info ] [MainThread]: Required dependencies:
+[0m21:59:11.437548 [debug] [MainThread]: Executing "git --help"
+[0m21:59:11.446765 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:59:11.448753 [debug] [MainThread]: STDERR: "b''"
+[0m21:59:11.449893 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:59:11.451103 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:59:11.452261 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:59:11.453337 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/nina/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:59:11.455958 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.24910268, "process_user_time": 4.281771, "process_kernel_time": 0.091866, "process_mem_max_rss": "92408", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m21:59:11.457716 [debug] [MainThread]: Command `dbt debug` failed at 21:59:11.457298 after 0.25 seconds
+[0m21:59:11.459021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75912d5ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f758f0ce6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f758f0d7ee0>]}
+[0m21:59:11.460322 [debug] [MainThread]: Flushing usage events
+[0m21:59:44.935684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf4084c730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf3e654e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf3e654730>]}
+
+
+============================== 21:59:44.939423 | 8352cb43-31c7-4977-87c7-f1381334b3d6 ==============================
+[0m21:59:44.939423 [info ] [MainThread]: Running with dbt=1.7.3
+[0m21:59:44.940463 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:59:44.941405 [info ] [MainThread]: dbt version: 1.7.3
+[0m21:59:44.942237 [info ] [MainThread]: python version: 3.8.10
+[0m21:59:44.943021 [info ] [MainThread]: python path: /home/nina/DE_test/.venv/bin/python
+[0m21:59:44.943840 [info ] [MainThread]: os info: Linux-5.15.0-91-generic-x86_64-with-glibc2.29
+[0m21:59:45.095034 [info ] [MainThread]: Using profiles dir at /home/nina/DE_test/de_test
+[0m21:59:45.096142 [info ] [MainThread]: Using profiles.yml file at /home/nina/DE_test/de_test/profiles.yml
+[0m21:59:45.096974 [info ] [MainThread]: Using dbt_project.yml file at /home/nina/DE_test/de_test/dbt_project.yml
+[0m21:59:45.098048 [info ] [MainThread]: adapter type: clickhouse
+[0m21:59:45.098972 [info ] [MainThread]: adapter version: 1.7.0
+[0m21:59:45.272954 [info ] [MainThread]: Configuration:
+[0m21:59:45.274177 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:59:45.275345 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:59:45.276489 [info ] [MainThread]: Required dependencies:
+[0m21:59:45.277611 [debug] [MainThread]: Executing "git --help"
+[0m21:59:45.294422 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:59:45.298659 [debug] [MainThread]: STDERR: "b''"
+[0m21:59:45.300057 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:59:45.301307 [info ] [MainThread]: Connection:
+[0m21:59:45.302630 [info ] [MainThread]:   driver: None
+[0m21:59:45.304110 [info ] [MainThread]:   host: localhost
+[0m21:59:45.305555 [info ] [MainThread]:   port: 8123
+[0m21:59:45.307323 [info ] [MainThread]:   user: de
+[0m21:59:45.308620 [info ] [MainThread]:   schema: dedb
+[0m21:59:45.309826 [info ] [MainThread]:   retries: 1
+[0m21:59:45.311126 [info ] [MainThread]:   database_engine: None
+[0m21:59:45.312420 [info ] [MainThread]:   cluster_mode: False
+[0m21:59:45.314050 [info ] [MainThread]:   secure: False
+[0m21:59:45.315348 [info ] [MainThread]:   verify: True
+[0m21:59:45.317960 [info ] [MainThread]:   connect_timeout: 10
+[0m21:59:45.319401 [info ] [MainThread]:   send_receive_timeout: 300
+[0m21:59:45.320608 [info ] [MainThread]:   sync_request_timeout: 5
+[0m21:59:45.321938 [info ] [MainThread]:   compress_block_size: 1048576
+[0m21:59:45.323197 [info ] [MainThread]:   compression: 
+[0m21:59:45.324488 [info ] [MainThread]:   check_exchange: True
+[0m21:59:45.325794 [info ] [MainThread]:   custom_settings: None
+[0m21:59:45.327036 [info ] [MainThread]:   use_lw_deletes: False
+[0m21:59:45.328342 [info ] [MainThread]:   allow_automatic_deduplication: False
+[0m21:59:45.329874 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m21:59:45.334200 [debug] [MainThread]: Acquiring new clickhouse connection 'debug'
+[0m21:59:45.337115 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:59:45.424668 [debug] [MainThread]: dbt_clickhouse adapter: On debug: select 1 as id...
+[0m21:59:45.429610 [debug] [MainThread]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m21:59:45.432194 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:59:45.433268 [info ] [MainThread]: [32mAll checks passed![0m
+[0m21:59:45.435300 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.5732712, "process_user_time": 4.208926, "process_kernel_time": 0.135771, "process_mem_max_rss": "96760", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m21:59:45.436851 [debug] [MainThread]: Command `dbt debug` succeeded at 21:59:45.436480 after 0.58 seconds
+[0m21:59:45.437849 [debug] [MainThread]: Connection 'debug' was left open.
+[0m21:59:45.438763 [debug] [MainThread]: On debug: Close
+[0m21:59:45.439855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf4084c730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf3e452c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf429f8af0>]}
+[0m21:59:45.440945 [debug] [MainThread]: Flushing usage events
+[0m21:59:53.139737 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m22:00:01.934598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64fe50730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64dc68cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64dc682b0>]}
+
+
+============================== 22:00:01.940242 | d020fc09-392f-4ecb-8f2a-5306636eac90 ==============================
+[0m22:00:01.940242 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:00:01.941659 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/nina/DE_test/de_test/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:00:02.318144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64dc68610>]}
+[0m22:00:02.512753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64d99f6a0>]}
+[0m22:00:02.514387 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:00:02.539390 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:00:02.541849 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:00:02.543134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64d99f5e0>]}
+[0m22:00:05.644431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64cca7b20>]}
+[0m22:00:05.663146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64cca7e80>]}
+[0m22:00:05.664487 [info ] [MainThread]: Found 3 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 421 macros, 0 groups, 0 semantic models
+[0m22:00:05.665597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64d99fb80>]}
+[0m22:00:05.668733 [info ] [MainThread]: 
+[0m22:00:05.670560 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m22:00:05.672759 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m22:00:05.697147 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:00:05.769235 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m22:00:05.773727 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:00:05.779374 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__dedb)
+[0m22:00:05.795066 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dedb: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list__dedb"} */
+select
+      t.name as name,
+      t.database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dedb'
+      
+
+  ...
+[0m22:00:05.802006 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:00:05.807174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64cbf8fd0>]}
+[0m22:00:05.809133 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:00:05.810208 [info ] [MainThread]: 
+[0m22:00:05.814339 [debug] [Thread-1  ]: Began running node model.de_test.my_first_dbt_model
+[0m22:00:05.817658 [info ] [Thread-1  ]: 1 of 3 START sql table model `dedb`.`my_first_dbt_model` ....................... [RUN]
+[0m22:00:05.819980 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dedb, now model.de_test.my_first_dbt_model)
+[0m22:00:05.821290 [debug] [Thread-1  ]: Began compiling node model.de_test.my_first_dbt_model
+[0m22:00:05.839738 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_first_dbt_model"
+[0m22:00:05.841809 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (compile): 22:00:05.822020 => 22:00:05.840999
+[0m22:00:05.843079 [debug] [Thread-1  ]: Began executing node model.de_test.my_first_dbt_model
+[0m22:00:05.892767 [debug] [Thread-1  ]: Creating new relation my_first_dbt_model
+[0m22:00:05.952335 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_first_dbt_model"
+[0m22:00:05.954311 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+
+  
+    
+    
+    
+
+    
+        create table `dedb`.`my_first_dbt_model`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+          as (
+            /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+          )
+  ...
+[0m22:00:05.973719 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m22:00:06.014502 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (execute): 22:00:05.843808 => 22:00:06.014111
+[0m22:00:06.015629 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64c277970>]}
+[0m22:00:06.017425 [info ] [Thread-1  ]: 1 of 3 OK created sql table model `dedb`.`my_first_dbt_model` .................. [[32mOK[0m in 0.20s]
+[0m22:00:06.019178 [debug] [Thread-1  ]: Finished running node model.de_test.my_first_dbt_model
+[0m22:00:06.020506 [debug] [Thread-1  ]: Began running node model.de_test.task1
+[0m22:00:06.022142 [info ] [Thread-1  ]: 2 of 3 START sql view model `dedb`.`task1` ..................................... [RUN]
+[0m22:00:06.023967 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.my_first_dbt_model, now model.de_test.task1)
+[0m22:00:06.025207 [debug] [Thread-1  ]: Began compiling node model.de_test.task1
+[0m22:00:06.030997 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task1"
+[0m22:00:06.032681 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (compile): 22:00:06.025777 => 22:00:06.032074
+[0m22:00:06.033913 [debug] [Thread-1  ]: Began executing node model.de_test.task1
+[0m22:00:06.064661 [debug] [Thread-1  ]: Creating new relation task1
+[0m22:00:06.081306 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task1"
+[0m22:00:06.083128 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+
+  create view `dedb`.`task1` 
+  
+    
+    
+  as (
+    
+
+WITH rank_payments AS (
+  SELECT
+    client_name
+  , payment_date
+  , value
+  , RANK() OVER (PARTITION BY client_id ORDER BY value DESC) rnk
+  FROM payments
+  WHERE payment_date BETWEEN '2023-01-01' AND '2023-01-31'
+)
+SELECT
+  client_name
+, payment_date
+, value
+FROM rank_payments
+WHERE rnk = 1
+ORDER BY client_name;
+  )...
+[0m22:00:06.098147 [debug] [Thread-1  ]: dbt_clickhouse adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+
+  create view `dedb`.`task1` 
+  
+    
+    
+  as (
+    
+
+WITH rank_payments AS (
+  SELECT
+    client_name
+  , payment_date
+  , value
+  , RANK() OVER (PARTITION BY client_id ORDER BY value DESC) rnk
+  FROM payments
+  WHERE payment_date BETWEEN '2023-01-01' AND '2023-01-31'
+)
+SELECT
+  client_name
+, payment_date
+, value
+FROM rank_payments
+WHERE rnk = 1
+ORDER BY client_name;
+  )
+[0m22:00:06.099804 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (execute): 22:00:06.034674 => 22:00:06.099157
+[0m22:00:06.104457 [debug] [Thread-1  ]: Database Error in model task1 (models/task1/task1.sql)
+  :HTTPDriver for http://localhost:8123 returned response code 400)
+   Code: 62. DB::Exception: Syntax error: failed at position 510 (end of query) (line 26, col 21): ;
+    ). Expected one of: token, Comma, Arrow, Dot, UUID, DoubleColon, MOD, DIV, NOT, BETWEEN, LIKE, ILIKE, NOT LIKE, NOT ILIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, IS, AND, OR, QuestionMark, alias, AS, LIMIT, OFFSET, SETTINGS, UNION, EXCEPT, INTERSECT. (SYNTAX_ERROR) (version 22.1.3.7 (official build))
+  compiled Code at target/run/de_test/models/task1/task1.sql
+[0m22:00:06.105897 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64c100790>]}
+[0m22:00:06.107547 [error] [Thread-1  ]: 2 of 3 ERROR creating sql view model `dedb`.`task1` ............................ [[31mERROR[0m in 0.08s]
+[0m22:00:06.109412 [debug] [Thread-1  ]: Finished running node model.de_test.task1
+[0m22:00:06.110781 [debug] [Thread-1  ]: Began running node model.de_test.my_second_dbt_model
+[0m22:00:06.112381 [info ] [Thread-1  ]: 3 of 3 START sql view model `dedb`.`my_second_dbt_model` ....................... [RUN]
+[0m22:00:06.114129 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task1, now model.de_test.my_second_dbt_model)
+[0m22:00:06.115397 [debug] [Thread-1  ]: Began compiling node model.de_test.my_second_dbt_model
+[0m22:00:06.123232 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_second_dbt_model"
+[0m22:00:06.125151 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (compile): 22:00:06.116168 => 22:00:06.124380
+[0m22:00:06.126424 [debug] [Thread-1  ]: Began executing node model.de_test.my_second_dbt_model
+[0m22:00:06.132015 [debug] [Thread-1  ]: Creating new relation my_second_dbt_model
+[0m22:00:06.135149 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_second_dbt_model"
+[0m22:00:06.136842 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+
+  create view `dedb`.`my_second_dbt_model` 
+  
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `dedb`.`my_first_dbt_model`
+where id = 1
+  )...
+[0m22:00:06.143121 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:00:06.149079 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (execute): 22:00:06.127182 => 22:00:06.148424
+[0m22:00:06.150973 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd020fc09-392f-4ecb-8f2a-5306636eac90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64c0555b0>]}
+[0m22:00:06.152785 [info ] [Thread-1  ]: 3 of 3 OK created sql view model `dedb`.`my_second_dbt_model` .................. [[32mOK[0m in 0.04s]
+[0m22:00:06.154698 [debug] [Thread-1  ]: Finished running node model.de_test.my_second_dbt_model
+[0m22:00:06.157877 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:00:06.159047 [debug] [MainThread]: Connection 'model.de_test.my_second_dbt_model' was left open.
+[0m22:00:06.164409 [debug] [MainThread]: On model.de_test.my_second_dbt_model: Close
+[0m22:00:06.165718 [info ] [MainThread]: 
+[0m22:00:06.167021 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m22:00:06.169718 [debug] [MainThread]: Command end result
+[0m22:00:06.187361 [info ] [MainThread]: 
+[0m22:00:06.188648 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:00:06.189774 [info ] [MainThread]: 
+[0m22:00:06.190906 [error] [MainThread]:   Database Error in model task1 (models/task1/task1.sql)
+  :HTTPDriver for http://localhost:8123 returned response code 400)
+   Code: 62. DB::Exception: Syntax error: failed at position 510 (end of query) (line 26, col 21): ;
+    ). Expected one of: token, Comma, Arrow, Dot, UUID, DoubleColon, MOD, DIV, NOT, BETWEEN, LIKE, ILIKE, NOT LIKE, NOT ILIKE, IN, NOT IN, GLOBAL IN, GLOBAL NOT IN, IS, AND, OR, QuestionMark, alias, AS, LIMIT, OFFSET, SETTINGS, UNION, EXCEPT, INTERSECT. (SYNTAX_ERROR) (version 22.1.3.7 (official build))
+  compiled Code at target/run/de_test/models/task1/task1.sql
+[0m22:00:06.192122 [info ] [MainThread]: 
+[0m22:00:06.193281 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m22:00:06.195189 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.372717, "process_user_time": 8.227532, "process_kernel_time": 0.155915, "process_mem_max_rss": "111884", "process_in_blocks": "56", "process_out_blocks": "2736", "command_success": false}
+[0m22:00:06.196710 [debug] [MainThread]: Command `dbt run` failed at 22:00:06.196312 after 4.37 seconds
+[0m22:00:06.197943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64fe50730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64dc68610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff64d99f6a0>]}
+[0m22:00:06.199159 [debug] [MainThread]: Flushing usage events
+[0m22:00:18.181847 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m22:01:11.372759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b2a19a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27fc3ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27fc3850>]}
+
+
+============================== 22:01:11.378367 | 02637185-0e2d-47ff-8f67-d7cd40f712e7 ==============================
+[0m22:01:11.378367 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:01:11.379816 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:01:11.728391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27fc32b0>]}
+[0m22:01:11.908621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b2c369af0>]}
+[0m22:01:11.910253 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:01:11.931936 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:01:11.983189 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:01:11.984072 [debug] [MainThread]: Partial parsing: updated file: de_test://models/task1/task1.sql
+[0m22:01:12.270281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27207af0>]}
+[0m22:01:12.285802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27bf97c0>]}
+[0m22:01:12.287055 [info ] [MainThread]: Found 3 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 421 macros, 0 groups, 0 semantic models
+[0m22:01:12.288154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27bf9910>]}
+[0m22:01:12.291277 [info ] [MainThread]: 
+[0m22:01:12.293180 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m22:01:12.295914 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m22:01:12.320900 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:01:12.387251 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m22:01:12.391520 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.396715 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__dedb)
+[0m22:01:12.411959 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dedb: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list__dedb"} */
+select
+      t.name as name,
+      t.database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dedb'
+      
+
+  ...
+[0m22:01:12.418444 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:01:12.424605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27dc1d60>]}
+[0m22:01:12.426516 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:01:12.427920 [info ] [MainThread]: 
+[0m22:01:12.431764 [debug] [Thread-1  ]: Began running node model.de_test.my_first_dbt_model
+[0m22:01:12.433227 [info ] [Thread-1  ]: 1 of 3 START sql table model `dedb`.`my_first_dbt_model` ....................... [RUN]
+[0m22:01:12.435312 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dedb, now model.de_test.my_first_dbt_model)
+[0m22:01:12.436542 [debug] [Thread-1  ]: Began compiling node model.de_test.my_first_dbt_model
+[0m22:01:12.452175 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_first_dbt_model"
+[0m22:01:12.453533 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (compile): 22:01:12.437260 => 22:01:12.452857
+[0m22:01:12.454191 [debug] [Thread-1  ]: Began executing node model.de_test.my_first_dbt_model
+[0m22:01:12.564698 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_first_dbt_model"
+[0m22:01:12.566341 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+
+  
+    
+    
+    
+
+    
+        create table `dedb`.`my_first_dbt_model__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+          as (
+            /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+          )
+  ...
+[0m22:01:12.580371 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:01:12.591336 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+EXCHANGE TABLES `dedb`.`my_first_dbt_model__dbt_backup` AND `dedb`.`my_first_dbt_model` 
+  
+  ...
+[0m22:01:12.595506 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.654341 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+
+    drop table if exists `dedb`.`my_first_dbt_model__dbt_backup` 
+  ...
+[0m22:01:12.658270 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.661779 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (execute): 22:01:12.454755 => 22:01:12.661170
+[0m22:01:12.663586 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b24e40fd0>]}
+[0m22:01:12.665252 [info ] [Thread-1  ]: 1 of 3 OK created sql table model `dedb`.`my_first_dbt_model` .................. [[32mOK[0m in 0.23s]
+[0m22:01:12.666989 [debug] [Thread-1  ]: Finished running node model.de_test.my_first_dbt_model
+[0m22:01:12.668220 [debug] [Thread-1  ]: Began running node model.de_test.task1
+[0m22:01:12.669677 [info ] [Thread-1  ]: 2 of 3 START sql view model `dedb`.`task1` ..................................... [RUN]
+[0m22:01:12.671577 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.my_first_dbt_model, now model.de_test.task1)
+[0m22:01:12.672749 [debug] [Thread-1  ]: Began compiling node model.de_test.task1
+[0m22:01:12.679286 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task1"
+[0m22:01:12.680970 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (compile): 22:01:12.673439 => 22:01:12.680330
+[0m22:01:12.682062 [debug] [Thread-1  ]: Began executing node model.de_test.task1
+[0m22:01:12.713966 [debug] [Thread-1  ]: Creating new relation task1
+[0m22:01:12.730785 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task1"
+[0m22:01:12.732473 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+
+  create view `dedb`.`task1` 
+  
+    
+    
+  as (
+    
+
+WITH rank_payments AS (
+  SELECT
+    client_name
+  , payment_date
+  , value
+  , RANK() OVER (PARTITION BY client_id ORDER BY value DESC) rnk
+  FROM payments
+  WHERE payment_date BETWEEN '2023-01-01' AND '2023-01-31'
+)
+SELECT
+  client_name
+, payment_date
+, value
+FROM rank_payments
+WHERE rnk = 1
+ORDER BY client_name
+  )...
+[0m22:01:12.740014 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:01:12.745566 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (execute): 22:01:12.682723 => 22:01:12.744969
+[0m22:01:12.747368 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b27dc1d60>]}
+[0m22:01:12.748935 [info ] [Thread-1  ]: 2 of 3 OK created sql view model `dedb`.`task1` ................................ [[32mOK[0m in 0.08s]
+[0m22:01:12.750566 [debug] [Thread-1  ]: Finished running node model.de_test.task1
+[0m22:01:12.751863 [debug] [Thread-1  ]: Began running node model.de_test.my_second_dbt_model
+[0m22:01:12.753321 [info ] [Thread-1  ]: 3 of 3 START sql view model `dedb`.`my_second_dbt_model` ....................... [RUN]
+[0m22:01:12.755090 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task1, now model.de_test.my_second_dbt_model)
+[0m22:01:12.756150 [debug] [Thread-1  ]: Began compiling node model.de_test.my_second_dbt_model
+[0m22:01:12.763768 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_second_dbt_model"
+[0m22:01:12.765532 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (compile): 22:01:12.756931 => 22:01:12.764853
+[0m22:01:12.766602 [debug] [Thread-1  ]: Began executing node model.de_test.my_second_dbt_model
+[0m22:01:12.789467 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_second_dbt_model"
+[0m22:01:12.791244 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+
+  create view `dedb`.`my_second_dbt_model__dbt_tmp` 
+  
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `dedb`.`my_first_dbt_model`
+where id = 1
+  )...
+[0m22:01:12.796851 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.878006 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model__dbt_backup` 
+  
+  ...
+[0m22:01:12.882298 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.885247 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    rename table `dedb`.`my_second_dbt_model` to `dedb`.`my_second_dbt_model__dbt_backup` 
+  
+  ...
+[0m22:01:12.889159 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.897909 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model` 
+  
+  ...
+[0m22:01:12.901754 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.904684 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    rename table `dedb`.`my_second_dbt_model__dbt_tmp` to `dedb`.`my_second_dbt_model` 
+  
+  ...
+[0m22:01:12.908863 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.920175 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model__dbt_backup` 
+  ...
+[0m22:01:12.923925 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:01:12.927578 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (execute): 22:01:12.767371 => 22:01:12.926891
+[0m22:01:12.929281 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02637185-0e2d-47ff-8f67-d7cd40f712e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b24dabf40>]}
+[0m22:01:12.930830 [info ] [Thread-1  ]: 3 of 3 OK created sql view model `dedb`.`my_second_dbt_model` .................. [[32mOK[0m in 0.17s]
+[0m22:01:12.932538 [debug] [Thread-1  ]: Finished running node model.de_test.my_second_dbt_model
+[0m22:01:12.935505 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:01:12.936564 [debug] [MainThread]: Connection 'model.de_test.my_second_dbt_model' was left open.
+[0m22:01:12.937589 [debug] [MainThread]: On model.de_test.my_second_dbt_model: Close
+[0m22:01:12.938713 [info ] [MainThread]: 
+[0m22:01:12.939996 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.65 seconds (0.65s).
+[0m22:01:12.942439 [debug] [MainThread]: Command end result
+[0m22:01:12.960320 [info ] [MainThread]: 
+[0m22:01:12.961548 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:01:12.962663 [info ] [MainThread]: 
+[0m22:01:12.963833 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:01:12.965755 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.7011962, "process_user_time": 5.669496, "process_kernel_time": 0.123945, "process_mem_max_rss": "107952", "process_out_blocks": "2744", "process_in_blocks": "0"}
+[0m22:01:12.967280 [debug] [MainThread]: Command `dbt run` succeeded at 22:01:12.966891 after 1.70 seconds
+[0m22:01:12.968519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b2a19a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b2688fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b271c4d60>]}
+[0m22:01:12.969875 [debug] [MainThread]: Flushing usage events
+[0m22:01:19.088500 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m22:46:46.243523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f631842ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6316256f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63162568b0>]}
+
+
+============================== 22:46:46.249120 | eeefbcee-43dd-4eed-91e7-ed173b2a6c87 ==============================
+[0m22:46:46.249120 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:46:46.250571 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/nina/DE_test/de_test/logs', 'profiles_dir': '/home/nina/DE_test/de_test', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:46:46.605449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eeefbcee-43dd-4eed-91e7-ed173b2a6c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6316256280>]}
+[0m22:46:46.800923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eeefbcee-43dd-4eed-91e7-ed173b2a6c87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6316162490>]}
+[0m22:46:46.802675 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:46:46.824173 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:46:46.883717 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 6 files added, 0 files changed.
+[0m22:46:46.885149 [debug] [MainThread]: Partial parsing: added file: de_test://models/task3/task3.sql
+[0m22:46:46.886478 [debug] [MainThread]: Partial parsing: added file: de_test://models/task2/schema.yml
+[0m22:46:46.887758 [debug] [MainThread]: Partial parsing: added file: de_test://models/task4/task4.sql
+[0m22:46:46.889150 [debug] [MainThread]: Partial parsing: added file: de_test://models/task3/schema.yml
+[0m22:46:46.890372 [debug] [MainThread]: Partial parsing: added file: de_test://models/task2/task2.sql
+[0m22:46:46.891712 [debug] [MainThread]: Partial parsing: added file: de_test://models/task4/schema.yml
+[0m22:46:47.336607 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "de_test_manager_departments".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("de_test", "manager_departments").
+  
+  To fix this, change the name of one of these resources:
+  - source.de_test.de_test.manager_departments (models/task2/schema.yml)
+  - source.de_test.de_test.manager_departments (models/task1/schema.yml)
+[0m22:46:47.338694 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.2047234, "process_user_time": 5.140929, "process_kernel_time": 0.16803, "process_mem_max_rss": "101840", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m22:46:47.340160 [debug] [MainThread]: Command `dbt run` failed at 22:46:47.339769 after 1.21 seconds
+[0m22:46:47.341436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f631842ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6315cf1580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f631536b430>]}
+[0m22:46:47.342609 [debug] [MainThread]: Flushing usage events
+[0m22:48:42.818743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee15ab1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee138e1ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee138e1850>]}
+
+
+============================== 22:48:42.822558 | 859786ec-f0be-4d71-ae1b-41236f2ec78d ==============================
+[0m22:48:42.822558 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:48:42.823604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'debug': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:43.198589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '859786ec-f0be-4d71-ae1b-41236f2ec78d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee173483d0>]}
+[0m22:48:43.392825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '859786ec-f0be-4d71-ae1b-41236f2ec78d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee137c32b0>]}
+[0m22:48:43.394444 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:48:43.410108 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:48:43.432656 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:48:43.433809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '859786ec-f0be-4d71-ae1b-41236f2ec78d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee13736b50>]}
+[0m22:48:46.223416 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "de_test_manager_departments".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("de_test", "manager_departments").
+  
+  To fix this, change the name of one of these resources:
+  - source.de_test.de_test.manager_departments (models/task3/schema.yml)
+  - source.de_test.de_test.manager_departments (models/task1/schema.yml)
+[0m22:48:46.225541 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.508359, "process_user_time": 7.481508, "process_kernel_time": 0.119768, "process_mem_max_rss": "101868", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m22:48:46.227015 [debug] [MainThread]: Command `dbt run` failed at 22:48:46.226622 after 3.51 seconds
+[0m22:48:46.228090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee15ab1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee13607e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee12a97250>]}
+[0m22:48:46.229176 [debug] [MainThread]: Flushing usage events
+[0m22:56:38.332152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa520e8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ff14ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ff14850>]}
+
+
+============================== 22:56:38.338755 | 95d34556-4882-4ca8-8d68-0022f7c77407 ==============================
+[0m22:56:38.338755 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:56:38.350965 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'fail_fast': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:56:38.849185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ff142b0>]}
+[0m22:56:39.047700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa542b5af0>]}
+[0m22:56:39.049380 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:56:39.068283 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:56:39.090225 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:56:39.091623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4fd3da90>]}
+[0m22:56:42.275007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ef520d0>]}
+[0m22:56:42.294227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ef21fd0>]}
+[0m22:56:42.295521 [info ] [MainThread]: Found 6 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 421 macros, 0 groups, 0 semantic models
+[0m22:56:42.296669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4fdb2760>]}
+[0m22:56:42.300106 [info ] [MainThread]: 
+[0m22:56:42.301967 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m22:56:42.305206 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m22:56:42.329371 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:42.400171 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m22:56:42.404873 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.410328 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__dedb)
+[0m22:56:42.424950 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dedb: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list__dedb"} */
+select
+      t.name as name,
+      t.database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dedb'
+      
+
+  ...
+[0m22:56:42.431686 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:56:42.438100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4ef529d0>]}
+[0m22:56:42.439990 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:56:42.441039 [info ] [MainThread]: 
+[0m22:56:42.444900 [debug] [Thread-1  ]: Began running node model.de_test.my_first_dbt_model
+[0m22:56:42.446317 [info ] [Thread-1  ]: 1 of 6 START sql table model `dedb`.`my_first_dbt_model` ....................... [RUN]
+[0m22:56:42.448115 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dedb, now model.de_test.my_first_dbt_model)
+[0m22:56:42.449343 [debug] [Thread-1  ]: Began compiling node model.de_test.my_first_dbt_model
+[0m22:56:42.467451 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_first_dbt_model"
+[0m22:56:42.469139 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (compile): 22:56:42.450084 => 22:56:42.468499
+[0m22:56:42.470283 [debug] [Thread-1  ]: Began executing node model.de_test.my_first_dbt_model
+[0m22:56:42.580226 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_first_dbt_model"
+[0m22:56:42.582178 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+
+  
+    
+    
+    
+
+    
+        create table `dedb`.`my_first_dbt_model__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+          as (
+            /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+          )
+  ...
+[0m22:56:42.599464 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m22:56:42.611230 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+EXCHANGE TABLES `dedb`.`my_first_dbt_model__dbt_backup` AND `dedb`.`my_first_dbt_model` 
+  
+  ...
+[0m22:56:42.616173 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.681416 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_first_dbt_model"} */
+
+    drop table if exists `dedb`.`my_first_dbt_model__dbt_backup` 
+  ...
+[0m22:56:42.685621 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.689402 [debug] [Thread-1  ]: Timing info for model.de_test.my_first_dbt_model (execute): 22:56:42.471032 => 22:56:42.688740
+[0m22:56:42.691271 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4e4310d0>]}
+[0m22:56:42.692979 [info ] [Thread-1  ]: 1 of 6 OK created sql table model `dedb`.`my_first_dbt_model` .................. [[32mOK[0m in 0.24s]
+[0m22:56:42.694732 [debug] [Thread-1  ]: Finished running node model.de_test.my_first_dbt_model
+[0m22:56:42.696055 [debug] [Thread-1  ]: Began running node model.de_test.task1
+[0m22:56:42.697598 [info ] [Thread-1  ]: 2 of 6 START sql view model `dedb`.`task1` ..................................... [RUN]
+[0m22:56:42.701486 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.my_first_dbt_model, now model.de_test.task1)
+[0m22:56:42.702823 [debug] [Thread-1  ]: Began compiling node model.de_test.task1
+[0m22:56:42.709023 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task1"
+[0m22:56:42.710688 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (compile): 22:56:42.703642 => 22:56:42.710070
+[0m22:56:42.711870 [debug] [Thread-1  ]: Began executing node model.de_test.task1
+[0m22:56:42.770846 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task1"
+[0m22:56:42.772517 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+
+  create view `dedb`.`task1__dbt_tmp` 
+  
+    
+    
+  as (
+    
+
+WITH rank_payments AS (
+  SELECT
+    client_name
+  , payment_date
+  , value
+  , RANK() OVER (PARTITION BY client_id ORDER BY value DESC) rnk
+  FROM payments
+  WHERE payment_date BETWEEN '2023-01-01' AND '2023-01-31'
+)
+SELECT
+  client_name
+, payment_date
+, value
+FROM rank_payments
+WHERE rnk = 1
+ORDER BY client_name
+  )...
+[0m22:56:42.788806 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:56:42.805080 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1__dbt_backup` 
+  
+  ...
+[0m22:56:42.808959 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.811930 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    rename table `dedb`.`task1` to `dedb`.`task1__dbt_backup` 
+  
+  ...
+[0m22:56:42.815639 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.823989 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1` 
+  
+  ...
+[0m22:56:42.827866 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.830624 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    rename table `dedb`.`task1__dbt_tmp` to `dedb`.`task1` 
+  
+  ...
+[0m22:56:42.834950 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.846369 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1__dbt_backup` 
+  ...
+[0m22:56:42.850067 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:42.853614 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (execute): 22:56:42.712553 => 22:56:42.853050
+[0m22:56:42.855316 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4e3c14f0>]}
+[0m22:56:42.856851 [info ] [Thread-1  ]: 2 of 6 OK created sql view model `dedb`.`task1` ................................ [[32mOK[0m in 0.16s]
+[0m22:56:42.858442 [debug] [Thread-1  ]: Finished running node model.de_test.task1
+[0m22:56:42.859715 [debug] [Thread-1  ]: Began running node model.de_test.task2
+[0m22:56:42.861178 [info ] [Thread-1  ]: 3 of 6 START sql view model `dedb`.`task2` ..................................... [RUN]
+[0m22:56:42.862878 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task1, now model.de_test.task2)
+[0m22:56:42.864115 [debug] [Thread-1  ]: Began compiling node model.de_test.task2
+[0m22:56:42.877292 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task2"
+[0m22:56:42.879009 [debug] [Thread-1  ]: Timing info for model.de_test.task2 (compile): 22:56:42.864849 => 22:56:42.878294
+[0m22:56:42.880236 [debug] [Thread-1  ]: Began executing node model.de_test.task2
+[0m22:56:42.886484 [debug] [Thread-1  ]: Creating new relation task2
+[0m22:56:42.888590 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task2"
+[0m22:56:42.889602 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+
+  create view `dedb`.`task2` 
+  
+    
+    
+  as (
+    
+
+WITH mds AS (
+	SELECT LEFT(email, 1) || SUBSTRING(email, 3, LENGTH(email)-1) email, department
+	FROM manager_departments
+)
+SELECT COALESCE(mds.department, 'Отдел не определен') department, SUM(p.value) "sum"
+FROM payments p
+LEFT JOIN mds ON p.manager_email = mds.email
+GROUP BY mds.department
+  )...
+[0m22:56:42.905095 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:56:42.910296 [debug] [Thread-1  ]: Timing info for model.de_test.task2 (execute): 22:56:42.880887 => 22:56:42.909686
+[0m22:56:42.911934 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4caacbe0>]}
+[0m22:56:42.913402 [info ] [Thread-1  ]: 3 of 6 OK created sql view model `dedb`.`task2` ................................ [[32mOK[0m in 0.05s]
+[0m22:56:42.916039 [debug] [Thread-1  ]: Finished running node model.de_test.task2
+[0m22:56:42.917577 [debug] [Thread-1  ]: Began running node model.de_test.task3
+[0m22:56:42.919104 [info ] [Thread-1  ]: 4 of 6 START sql view model `dedb`.`task3` ..................................... [RUN]
+[0m22:56:42.920788 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task2, now model.de_test.task3)
+[0m22:56:42.922000 [debug] [Thread-1  ]: Began compiling node model.de_test.task3
+[0m22:56:42.929389 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task3"
+[0m22:56:42.931069 [debug] [Thread-1  ]: Timing info for model.de_test.task3 (compile): 22:56:42.922818 => 22:56:42.930395
+[0m22:56:42.932221 [debug] [Thread-1  ]: Began executing node model.de_test.task3
+[0m22:56:42.938398 [debug] [Thread-1  ]: Creating new relation task3
+[0m22:56:42.942251 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task3"
+[0m22:56:42.943634 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+
+  create view `dedb`.`task3` 
+  
+    
+    
+  as (
+    
+
+WITH rank_data AS (
+	SELECT
+	  id
+	, value
+	, client_id
+	, client_name
+	, payment_date
+	, manager_name
+	, manager_email
+	, RANK() OVER (PARTITION BY client_id ORDER BY payment_date, id) rnk
+	FROM payments
+)
+SELECT
+  id
+, value
+, client_id
+, client_name
+, payment_date
+, manager_name
+, manager_email
+, if(rnk = 1, 'Новый', 'Действующий') client_state
+FROM rank_data
+  )...
+[0m22:56:42.952003 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:56:42.957829 [debug] [Thread-1  ]: Timing info for model.de_test.task3 (execute): 22:56:42.932950 => 22:56:42.957193
+[0m22:56:42.959576 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4e3a0370>]}
+[0m22:56:42.961072 [info ] [Thread-1  ]: 4 of 6 OK created sql view model `dedb`.`task3` ................................ [[32mOK[0m in 0.04s]
+[0m22:56:42.962921 [debug] [Thread-1  ]: Finished running node model.de_test.task3
+[0m22:56:42.964209 [debug] [Thread-1  ]: Began running node model.de_test.task4
+[0m22:56:42.966100 [info ] [Thread-1  ]: 5 of 6 START sql view model `dedb`.`task4` ..................................... [RUN]
+[0m22:56:42.968103 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task3, now model.de_test.task4)
+[0m22:56:42.969330 [debug] [Thread-1  ]: Began compiling node model.de_test.task4
+[0m22:56:42.976462 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task4"
+[0m22:56:42.978347 [debug] [Thread-1  ]: Timing info for model.de_test.task4 (compile): 22:56:42.970070 => 22:56:42.977658
+[0m22:56:42.979234 [debug] [Thread-1  ]: Began executing node model.de_test.task4
+[0m22:56:42.985256 [debug] [Thread-1  ]: Creating new relation task4
+[0m22:56:42.987798 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task4"
+[0m22:56:42.988843 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+
+  create view `dedb`.`task4` 
+  
+    
+    
+  as (
+    
+
+WITH group_data AS(
+	SELECT
+	  toMonth(payment_date) tmonth
+	, toYear(payment_date) tyear
+	, SUM(value) revenue_by_month
+	FROM payments
+	GROUP BY tmonth, tyear
+)
+, months_name AS(
+	SELECT 1 tmonth, 'Январь' name UNION ALL
+	SELECT 2, 'Февраль'		UNION ALL
+	SELECT 3, 'Март'		UNION ALL
+	SELECT 4, 'Апрель' 		UNION ALL
+	SELECT 5, 'Май' 		UNION ALL
+	SELECT 6, 'Июнь' 		UNION ALL
+	SELECT 7, 'Июль' 		UNION ALL
+	SELECT 8, 'Август' 		UNION ALL
+	SELECT 9, 'Сентябрь' 	UNION ALL
+	SELECT 10, 'Октябрь' 	UNION ALL
+	SELECT 11, 'Ноябрь'		UNION ALL
+	SELECT 12, 'Декабрь'
+)
+SELECT mn.name || ' ' || toString(gd.tyear) "period"
+, revenue_by_month
+, SUM(revenue_by_month) OVER w revenue_cumulative
+FROM group_data gd
+INNER JOIN months_name mn ON gd.tmonth = mn.tmonth
+WINDOW w AS (
+  PARTITION BY gd.tyear
+  ORDER BY gd.tmonth
+  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+)
+  )...
+[0m22:56:43.009970 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m22:56:43.019635 [debug] [Thread-1  ]: Timing info for model.de_test.task4 (execute): 22:56:42.979983 => 22:56:43.018677
+[0m22:56:43.022351 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4caddaf0>]}
+[0m22:56:43.024879 [info ] [Thread-1  ]: 5 of 6 OK created sql view model `dedb`.`task4` ................................ [[32mOK[0m in 0.05s]
+[0m22:56:43.027617 [debug] [Thread-1  ]: Finished running node model.de_test.task4
+[0m22:56:43.029719 [debug] [Thread-1  ]: Began running node model.de_test.my_second_dbt_model
+[0m22:56:43.031848 [info ] [Thread-1  ]: 6 of 6 START sql view model `dedb`.`my_second_dbt_model` ....................... [RUN]
+[0m22:56:43.034217 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task4, now model.de_test.my_second_dbt_model)
+[0m22:56:43.036105 [debug] [Thread-1  ]: Began compiling node model.de_test.my_second_dbt_model
+[0m22:56:43.046924 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.my_second_dbt_model"
+[0m22:56:43.050171 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (compile): 22:56:43.037550 => 22:56:43.049076
+[0m22:56:43.051774 [debug] [Thread-1  ]: Began executing node model.de_test.my_second_dbt_model
+[0m22:56:43.067350 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.my_second_dbt_model"
+[0m22:56:43.069147 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+
+  create view `dedb`.`my_second_dbt_model__dbt_tmp` 
+  
+    
+    
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `dedb`.`my_first_dbt_model`
+where id = 1
+  )...
+[0m22:56:43.075477 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.083747 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model__dbt_backup` 
+  
+  ...
+[0m22:56:43.087656 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.090419 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    rename table `dedb`.`my_second_dbt_model` to `dedb`.`my_second_dbt_model__dbt_backup` 
+  
+  ...
+[0m22:56:43.094164 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.102859 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model` 
+  
+  ...
+[0m22:56:43.106842 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.109861 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    rename table `dedb`.`my_second_dbt_model__dbt_tmp` to `dedb`.`my_second_dbt_model` 
+  
+  ...
+[0m22:56:43.113883 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.125445 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.my_second_dbt_model"} */
+
+    drop table if exists `dedb`.`my_second_dbt_model__dbt_backup` 
+  ...
+[0m22:56:43.129464 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:56:43.133059 [debug] [Thread-1  ]: Timing info for model.de_test.my_second_dbt_model (execute): 22:56:43.052622 => 22:56:43.132387
+[0m22:56:43.135094 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95d34556-4882-4ca8-8d68-0022f7c77407', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4e3c14f0>]}
+[0m22:56:43.136871 [info ] [Thread-1  ]: 6 of 6 OK created sql view model `dedb`.`my_second_dbt_model` .................. [[32mOK[0m in 0.10s]
+[0m22:56:43.138609 [debug] [Thread-1  ]: Finished running node model.de_test.my_second_dbt_model
+[0m22:56:43.141751 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:56:43.142852 [debug] [MainThread]: Connection 'model.de_test.my_second_dbt_model' was left open.
+[0m22:56:43.143870 [debug] [MainThread]: On model.de_test.my_second_dbt_model: Close
+[0m22:56:43.145013 [info ] [MainThread]: 
+[0m22:56:43.146057 [info ] [MainThread]: Finished running 1 table model, 5 view models in 0 hours 0 minutes and 0.84 seconds (0.84s).
+[0m22:56:43.149583 [debug] [MainThread]: Command end result
+[0m22:56:43.166883 [info ] [MainThread]: 
+[0m22:56:43.168057 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:56:43.169129 [info ] [MainThread]: 
+[0m22:56:43.170279 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m22:56:43.172295 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.008098, "process_user_time": 8.550662, "process_kernel_time": 0.187882, "process_mem_max_rss": "112316", "process_out_blocks": "2872", "process_in_blocks": "0"}
+[0m22:56:43.173794 [debug] [MainThread]: Command `dbt run` succeeded at 22:56:43.173400 after 5.01 seconds
+[0m22:56:43.174900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa520e8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4fc718e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa4cb45a90>]}
+[0m22:56:43.176128 [debug] [MainThread]: Flushing usage events
+[0m22:56:49.359512 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m22:57:15.992076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1668176970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665fa1f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665fa18e0>]}
+
+
+============================== 22:57:15.997406 | fa40a0d5-a5c0-4c87-ae80-b75b95746df3 ==============================
+[0m22:57:15.997406 [info ] [MainThread]: Running with dbt=1.7.3
+[0m22:57:15.998732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nina/DE_test/de_test', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/nina/DE_test/de_test/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:16.369579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665fa12b0>]}
+[0m22:57:16.568055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665e4e880>]}
+[0m22:57:16.569701 [info ] [MainThread]: Registered adapter: clickhouse=1.7.0
+[0m22:57:16.589374 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m22:57:16.649366 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m22:57:16.650691 [debug] [MainThread]: Partial parsing: deleted file: de_test://models/example/my_first_dbt_model.sql
+[0m22:57:16.651721 [debug] [MainThread]: Partial parsing: deleted file: de_test://models/example/my_second_dbt_model.sql
+[0m22:57:16.677311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665b26970>]}
+[0m22:57:16.694869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665be7340>]}
+[0m22:57:16.696248 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 421 macros, 0 groups, 0 semantic models
+[0m22:57:16.697610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665e65ee0>]}
+[0m22:57:16.701023 [info ] [MainThread]: 
+[0m22:57:16.708253 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m22:57:16.716110 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m22:57:16.737741 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:57:16.805958 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m22:57:16.810848 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:16.820202 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list__dedb'
+[0m22:57:16.836242 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:57:16.874340 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__dedb: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "connection_name": "list__dedb"} */
+select
+      t.name as name,
+      t.database as schema,
+      if(engine not in ('MaterializedView', 'View'), 'table', 'view') as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'dedb'
+      
+
+  ...
+[0m22:57:16.881172 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:57:16.889950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665adfd00>]}
+[0m22:57:16.891921 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:57:16.893142 [info ] [MainThread]: 
+[0m22:57:16.896969 [debug] [Thread-1  ]: Began running node model.de_test.task1
+[0m22:57:16.898396 [info ] [Thread-1  ]: 1 of 4 START sql view model `dedb`.`task1` ..................................... [RUN]
+[0m22:57:16.900726 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list__dedb, now model.de_test.task1)
+[0m22:57:16.901960 [debug] [Thread-1  ]: Began compiling node model.de_test.task1
+[0m22:57:16.920106 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task1"
+[0m22:57:16.921951 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (compile): 22:57:16.902680 => 22:57:16.921245
+[0m22:57:16.923126 [debug] [Thread-1  ]: Began executing node model.de_test.task1
+[0m22:57:17.002187 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task1"
+[0m22:57:17.004042 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+
+  create view `dedb`.`task1__dbt_tmp` 
+  
+    
+    
+  as (
+    
+
+WITH rank_payments AS (
+  SELECT
+    client_name
+  , payment_date
+  , value
+  , RANK() OVER (PARTITION BY client_id ORDER BY value DESC) rnk
+  FROM payments
+  WHERE payment_date BETWEEN '2023-01-01' AND '2023-01-31'
+)
+SELECT
+  client_name
+, payment_date
+, value
+FROM rank_payments
+WHERE rnk = 1
+ORDER BY client_name
+  )...
+[0m22:57:17.015131 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:57:17.032916 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1__dbt_backup` 
+  
+  ...
+[0m22:57:17.036879 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.039622 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    rename table `dedb`.`task1` to `dedb`.`task1__dbt_backup` 
+  
+  ...
+[0m22:57:17.043480 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.051120 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1` 
+  
+  ...
+[0m22:57:17.054983 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.057656 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    rename table `dedb`.`task1__dbt_tmp` to `dedb`.`task1` 
+  
+  ...
+[0m22:57:17.062417 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.120922 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task1: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task1"} */
+
+    drop table if exists `dedb`.`task1__dbt_backup` 
+  ...
+[0m22:57:17.124870 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.128564 [debug] [Thread-1  ]: Timing info for model.de_test.task1 (execute): 22:57:16.923816 => 22:57:17.127962
+[0m22:57:17.130318 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1664762d30>]}
+[0m22:57:17.131887 [info ] [Thread-1  ]: 1 of 4 OK created sql view model `dedb`.`task1` ................................ [[32mOK[0m in 0.23s]
+[0m22:57:17.133516 [debug] [Thread-1  ]: Finished running node model.de_test.task1
+[0m22:57:17.134770 [debug] [Thread-1  ]: Began running node model.de_test.task2
+[0m22:57:17.136201 [info ] [Thread-1  ]: 2 of 4 START sql view model `dedb`.`task2` ..................................... [RUN]
+[0m22:57:17.137954 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task1, now model.de_test.task2)
+[0m22:57:17.139185 [debug] [Thread-1  ]: Began compiling node model.de_test.task2
+[0m22:57:17.146176 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task2"
+[0m22:57:17.147819 [debug] [Thread-1  ]: Timing info for model.de_test.task2 (compile): 22:57:17.139921 => 22:57:17.147206
+[0m22:57:17.149373 [debug] [Thread-1  ]: Began executing node model.de_test.task2
+[0m22:57:17.160885 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task2"
+[0m22:57:17.162543 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+
+  create view `dedb`.`task2__dbt_tmp` 
+  
+    
+    
+  as (
+    
+
+WITH mds AS (
+	SELECT LEFT(email, 1) || SUBSTRING(email, 3, LENGTH(email)-1) email, department
+	FROM manager_departments
+)
+SELECT COALESCE(mds.department, 'Отдел не определен') department, SUM(p.value) "sum"
+FROM payments p
+LEFT JOIN mds ON p.manager_email = mds.email
+GROUP BY mds.department
+  )...
+[0m22:57:17.169625 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:57:17.177282 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+    drop table if exists `dedb`.`task2__dbt_backup` 
+  
+  ...
+[0m22:57:17.180981 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.183832 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+    rename table `dedb`.`task2` to `dedb`.`task2__dbt_backup` 
+  
+  ...
+[0m22:57:17.187678 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.198406 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+    drop table if exists `dedb`.`task2` 
+  
+  ...
+[0m22:57:17.202599 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.205733 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+    rename table `dedb`.`task2__dbt_tmp` to `dedb`.`task2` 
+  
+  ...
+[0m22:57:17.209661 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.221238 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task2: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task2"} */
+
+    drop table if exists `dedb`.`task2__dbt_backup` 
+  ...
+[0m22:57:17.225192 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.228651 [debug] [Thread-1  ]: Timing info for model.de_test.task2 (execute): 22:57:17.150231 => 22:57:17.228177
+[0m22:57:17.230571 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1664799760>]}
+[0m22:57:17.232378 [info ] [Thread-1  ]: 2 of 4 OK created sql view model `dedb`.`task2` ................................ [[32mOK[0m in 0.09s]
+[0m22:57:17.234518 [debug] [Thread-1  ]: Finished running node model.de_test.task2
+[0m22:57:17.236026 [debug] [Thread-1  ]: Began running node model.de_test.task3
+[0m22:57:17.237621 [info ] [Thread-1  ]: 3 of 4 START sql view model `dedb`.`task3` ..................................... [RUN]
+[0m22:57:17.239831 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task2, now model.de_test.task3)
+[0m22:57:17.241152 [debug] [Thread-1  ]: Began compiling node model.de_test.task3
+[0m22:57:17.248642 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task3"
+[0m22:57:17.250751 [debug] [Thread-1  ]: Timing info for model.de_test.task3 (compile): 22:57:17.241970 => 22:57:17.249875
+[0m22:57:17.252118 [debug] [Thread-1  ]: Began executing node model.de_test.task3
+[0m22:57:17.264151 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task3"
+[0m22:57:17.266014 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+
+  create view `dedb`.`task3__dbt_tmp` 
+  
+    
+    
+  as (
+    
+
+WITH rank_data AS (
+	SELECT
+	  id
+	, value
+	, client_id
+	, client_name
+	, payment_date
+	, manager_name
+	, manager_email
+	, RANK() OVER (PARTITION BY client_id ORDER BY payment_date, id) rnk
+	FROM payments
+)
+SELECT
+  id
+, value
+, client_id
+, client_name
+, payment_date
+, manager_name
+, manager_email
+, if(rnk = 1, 'Новый', 'Действующий') client_state
+FROM rank_data
+  )...
+[0m22:57:17.273829 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:57:17.282257 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+    drop table if exists `dedb`.`task3__dbt_backup` 
+  
+  ...
+[0m22:57:17.286279 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.289392 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+    rename table `dedb`.`task3` to `dedb`.`task3__dbt_backup` 
+  
+  ...
+[0m22:57:17.293945 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.303102 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+    drop table if exists `dedb`.`task3` 
+  
+  ...
+[0m22:57:17.307141 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.310150 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+    rename table `dedb`.`task3__dbt_tmp` to `dedb`.`task3` 
+  
+  ...
+[0m22:57:17.314297 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.325871 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task3: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task3"} */
+
+    drop table if exists `dedb`.`task3__dbt_backup` 
+  ...
+[0m22:57:17.330153 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.333725 [debug] [Thread-1  ]: Timing info for model.de_test.task3 (execute): 22:57:17.252935 => 22:57:17.333112
+[0m22:57:17.335499 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16646a0e20>]}
+[0m22:57:17.337102 [info ] [Thread-1  ]: 3 of 4 OK created sql view model `dedb`.`task3` ................................ [[32mOK[0m in 0.10s]
+[0m22:57:17.338833 [debug] [Thread-1  ]: Finished running node model.de_test.task3
+[0m22:57:17.340116 [debug] [Thread-1  ]: Began running node model.de_test.task4
+[0m22:57:17.341540 [info ] [Thread-1  ]: 4 of 4 START sql view model `dedb`.`task4` ..................................... [RUN]
+[0m22:57:17.343259 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.de_test.task3, now model.de_test.task4)
+[0m22:57:17.344530 [debug] [Thread-1  ]: Began compiling node model.de_test.task4
+[0m22:57:17.352157 [debug] [Thread-1  ]: Writing injected SQL for node "model.de_test.task4"
+[0m22:57:17.353982 [debug] [Thread-1  ]: Timing info for model.de_test.task4 (compile): 22:57:17.345296 => 22:57:17.353270
+[0m22:57:17.355341 [debug] [Thread-1  ]: Began executing node model.de_test.task4
+[0m22:57:17.433806 [debug] [Thread-1  ]: Writing runtime sql for node "model.de_test.task4"
+[0m22:57:17.435636 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+
+  create view `dedb`.`task4__dbt_tmp` 
+  
+    
+    
+  as (
+    
+
+WITH group_data AS(
+	SELECT
+	  toMonth(payment_date) tmonth
+	, toYear(payment_date) tyear
+	, SUM(value) revenue_by_month
+	FROM payments
+	GROUP BY tmonth, tyear
+)
+, months_name AS(
+	SELECT 1 tmonth, 'Январь' name UNION ALL
+	SELECT 2, 'Февраль'		UNION ALL
+	SELECT 3, 'Март'		UNION ALL
+	SELECT 4, 'Апрель' 		UNION ALL
+	SELECT 5, 'Май' 		UNION ALL
+	SELECT 6, 'Июнь' 		UNION ALL
+	SELECT 7, 'Июль' 		UNION ALL
+	SELECT 8, 'Август' 		UNION ALL
+	SELECT 9, 'Сентябрь' 	UNION ALL
+	SELECT 10, 'Октябрь' 	UNION ALL
+	SELECT 11, 'Ноябрь'		UNION ALL
+	SELECT 12, 'Декабрь'
+)
+SELECT mn.name || ' ' || toString(gd.tyear) "period"
+, revenue_by_month
+, SUM(revenue_by_month) OVER w revenue_cumulative
+FROM group_data gd
+INNER JOIN months_name mn ON gd.tmonth = mn.tmonth
+WINDOW w AS (
+  PARTITION BY gd.tyear
+  ORDER BY gd.tmonth
+  ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+)
+  )...
+[0m22:57:17.447372 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m22:57:17.456543 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+    drop table if exists `dedb`.`task4__dbt_backup` 
+  
+  ...
+[0m22:57:17.460720 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.463729 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+    rename table `dedb`.`task4` to `dedb`.`task4__dbt_backup` 
+  
+  ...
+[0m22:57:17.468042 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.476762 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+    drop table if exists `dedb`.`task4` 
+  
+  ...
+[0m22:57:17.480820 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.483732 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+    rename table `dedb`.`task4__dbt_tmp` to `dedb`.`task4` 
+  
+  ...
+[0m22:57:17.487674 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.499461 [debug] [Thread-1  ]: dbt_clickhouse adapter: On model.de_test.task4: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "clickhouse_dedb", "target_name": "dev", "node_id": "model.de_test.task4"} */
+
+    drop table if exists `dedb`.`task4__dbt_backup` 
+  ...
+[0m22:57:17.503559 [debug] [Thread-1  ]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m22:57:17.507431 [debug] [Thread-1  ]: Timing info for model.de_test.task4 (execute): 22:57:17.356092 => 22:57:17.506810
+[0m22:57:17.509197 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa40a0d5-a5c0-4c87-ae80-b75b95746df3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16646cabb0>]}
+[0m22:57:17.511015 [info ] [Thread-1  ]: 4 of 4 OK created sql view model `dedb`.`task4` ................................ [[32mOK[0m in 0.17s]
+[0m22:57:17.512724 [debug] [Thread-1  ]: Finished running node model.de_test.task4
+[0m22:57:17.515858 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:57:17.516956 [debug] [MainThread]: Connection 'list_' was left open.
+[0m22:57:17.517992 [debug] [MainThread]: On list_: Close
+[0m22:57:17.519110 [debug] [MainThread]: Connection 'model.de_test.task4' was left open.
+[0m22:57:17.520118 [debug] [MainThread]: On model.de_test.task4: Close
+[0m22:57:17.521299 [info ] [MainThread]: 
+[0m22:57:17.522356 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.81 seconds (0.81s).
+[0m22:57:17.525025 [debug] [MainThread]: Command end result
+[0m22:57:17.541319 [info ] [MainThread]: 
+[0m22:57:17.542760 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:57:17.544006 [info ] [MainThread]: 
+[0m22:57:17.545120 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m22:57:17.547024 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6666731, "process_user_time": 5.554359, "process_kernel_time": 0.127778, "process_mem_max_rss": "105716", "process_out_blocks": "2744", "process_in_blocks": "0"}
+[0m22:57:17.548518 [debug] [MainThread]: Command `dbt run` succeeded at 22:57:17.548094 after 1.67 seconds
+[0m22:57:17.549571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1668176970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16646cabb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1665e4e880>]}
+[0m22:57:17.550670 [debug] [MainThread]: Flushing usage events
+[0m22:57:26.300144 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.

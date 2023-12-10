@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  clickhouse:
+    image: yandex/clickhouse-server
+    container_name: clickhouse
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    environment:
+      - CLICKHOUSE_USER=de
+      - CLICKHOUSE_PASSWORD=de
+    volumes:
+      - ./db:/var/lib/clickhouse
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - de_ntw
+
+networks:
+  de_ntw:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.222.1.0/24
